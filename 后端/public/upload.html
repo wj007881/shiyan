@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload</title>
+  <style>
+    body {
+      padding: 50px;
+      font: 14px Helvetica, Arial;
+    }
+  </style>
+</head>
+<body>
+  <div id="UploadBox">
+		<h2>Video Uploader</h2>
+
+		<span id='UploadArea'>
+				<label for="FileBox">Choose A File: </label>
+        <input type="file" id="FileBox" @change="FileChosen"><br>
+				<el-button type="primary" @click="StartUpload">Upload</el-button>
+				<br>
+				<label for="NameBox">Name: </label>
+        <input type="text" id="NameBox" ><br>
+				<el-progress :text-inside="true" :stroke-width="18" :percentage="p"></el-progress>
+				
+			</span>
+	</div>
+
+</body>
+</html>

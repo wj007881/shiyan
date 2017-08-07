@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "start": "node entry.js",
+    "test": "ava"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ],
+    "files": [
+      "test/*.js",
+      "!test/**/*-x.js"
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "jsonwebtoken": "^7.1.9",
+    "koa": "^2.0.0-alpha.5",
+    "koa-body": "^2.1.0",
+    "koa-favicon": "^2.0.0",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
+    "koa2-cors": "^2.0.3",
+    "log4js": "^0.6.38",
+    "moment": "^2.18.1",
+    "mongoose": "^4.5.9",
+    "restc": "0.0.7",
+    "socket.io": "^2.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "axios": "^0.16.1",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-register": "^6.23.0"
+  }
+}
